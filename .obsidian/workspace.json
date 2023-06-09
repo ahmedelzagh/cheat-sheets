@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "28542bb67f5519fa",
+        "id": "2c8120597928847b",
         "type": "tabs",
         "children": [
           {
-            "id": "244e16cfe38cf304",
+            "id": "68f23021941f714e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Git & Github.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -60,12 +64,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "f25637a903933fa7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "fdec8cf2edb983f6",
@@ -81,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tools/Git & Github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Tools/Git & Github.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,18 +133,29 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "Tools/Git & Github.md"
+              }
+            }
+          },
+          {
+            "id": "2812d088c567cc19",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -138,6 +164,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "244e16cfe38cf304",
-  "lastOpenFiles": []
+  "active": "2812d088c567cc19",
+  "lastOpenFiles": [
+    "Learning-Goals.md",
+    "Tools/Git & Github.md",
+    "Tools",
+    "Books/Clean Code.md",
+    "Books/Atomic Habits.md",
+    "Books/Eloquent JavaScript.md",
+    "Books/Learning React.md",
+    "Learning.md",
+    "Linux/Docker/Ubuntu Media Server.md",
+    "Linux/Distros/Fedora.md"
+  ]
 }
