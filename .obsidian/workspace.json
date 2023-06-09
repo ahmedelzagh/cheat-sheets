@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2c8120597928847b",
+        "id": "cc9633409cb03b98",
         "type": "tabs",
         "children": [
           {
-            "id": "68f23021941f714e",
+            "id": "f3ced2abc7e790da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Git & Github.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "fdec8cf2edb983f6",
@@ -94,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Git & Github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Git & Github.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Tools/Git & Github.md"
-              }
+              "state": {}
             }
           },
           {
@@ -164,17 +155,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2812d088c567cc19",
+  "active": "f3ced2abc7e790da",
   "lastOpenFiles": [
-    "Learning-Goals.md",
+    "Linux/Distros/Fedora.md",
     "Tools/Git & Github.md",
+    "Learning-Goals.md",
     "Tools",
     "Books/Clean Code.md",
     "Books/Atomic Habits.md",
     "Books/Eloquent JavaScript.md",
     "Books/Learning React.md",
     "Learning.md",
-    "Linux/Docker/Ubuntu Media Server.md",
-    "Linux/Distros/Fedora.md"
+    "Linux/Docker/Ubuntu Media Server.md"
   ]
 }

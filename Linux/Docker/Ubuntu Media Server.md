@@ -17,68 +17,68 @@ sudo systemctl restart systemd-logind
 ```
 
 ### 2- Install monitoring services
-- #### Install Neofetch and run it at startup
-1. Install neofetch from `apt`:
+#### 1- Install Neofetch and run it at startup
+- Install `neofetch` from `apt`:
 ```bash
 sudo apt install neofetch
 ```
-2. Disable all current default MOTD’s daemon scripts:
+- Disable all current default MOTD’s daemon scripts:
 ```bash
 sudo chmod -x /etc/update-motd.d/*
 ```
-3. Create a new script, eg. `/etc/update-motd.d/01-custom` with the following [bash script](https://linuxconfig.org/bash-scripting-tutorial-for-beginners):
+- Create a new script, e.g. `/etc/update-motd.d/01-custom` with the following [bash script](https://linuxconfig.org/bash-scripting-tutorial-for-beginners):
 ```bash
 #!/bin/sh
 echo "GENERAL SYSTEM INFORMATION"
 # Show system info using neofetch
 neofetch
 ```
-4. Make this script executable
+- Make this script executable
 ```bash
 sudo chmod +x /etc/update-motd.d/01-custom
 ```
-- #### Install `htop` with `libsensors` to monitor the server resources
-1. Install services:
+#### 2- Install `htop` with `libsensors` to monitor the server resources
+- Install services:
 ```bash
 sudo apt install htop libsensors-dev
 ```
-2. Show CPU tempreature by running `htop` command then pressing `F2` to enter the setup, go to `Display options` the activate `Also show CPU tempreature`
+- Show CPU temperature by running `htop` command then pressing `F2` to enter the setup, go to `Display options` the activate `Also show CPU tempreature`
 
-### 3- Install Docker ([docs](https://docs.docker.com/engine/install/ubuntu/))
-- #### Set up the repository
-1. Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
+### 3- Install Docker [docs](https://docs.docker.com/engine/install/ubuntu/)
+#### 1- Set up the repository
+- Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
 ```bash
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
 ```
-2. Add Docker’s official GPG key:
+- Add Docker’s official GPG key:
 ```bash
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
-3. Use the following command to set up the repository:
+- Use the following command to set up the repository:
 ```bash
 echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
-- #### Install Docker Engine
-3. Update the `apt` package index:
+#### 2- Install Docker Engine
+- Update the `apt` package index:
 ```bash
 sudo apt-get update
 ```
-2. Install Docker Engine, containerd, and Docker Compose (Latest).
+- Install Docker Engine, containerd, and Docker Compose (Latest).
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
-- #### Add docker users
-1. Add your main user to docker group:
+#### 3- Add docker users
+- Add your main user to `docker` group:
 ```bash
 sudo usermod -a -G docker aelzagh
 ```
-2. add user for docker and add it to docker and sudo groups:
+- add user for docker and add it to `docker` and `sudo` groups:
 ```bash
 sudo adduser docker --ingroup docker
 sudo usermod -a -G sudo docker
@@ -86,7 +86,7 @@ sudo usermod -a -G sudo docker
 
 ## Deploy Containers
 *Make sure to switch to docker user first*
-### 1- Portainer ([docs]([Install Portainer CE with Docker on Linux - Portainer Documentation](https://docs.portainer.io/start/install-ce/server/docker/linux)))
+### 1- Portainer [docs](https://docs.portainer.io/start/install-ce/server/docker/linux)
 - First, create the volume that Portainer Server will use to store its database:
 ```bash
 docker volume create portainer_data
@@ -102,7 +102,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 ```bash
 mkdir ~/docker
 ```
-- Create a `docker-compose.yml` file inside the created folder: [docker-compose.yml]([Dotfiles/docker-compose.yml at main · ahmedelzagh/Dotfiles · GitHub](https://github.com/ahmedelzagh/Dotfiles/blob/main/Linux/docker-compose/Media-Library/docker-compose.yml)) then run `docker compose up -d`
+- Create a `docker-compose.yml` file inside the created folder: [docker-compose.yml](https://github.com/ahmedelzagh/Dotfiles/blob/main/Linux/docker-compose/Media-Library/docker-compose.yml) then run `docker compose up -d`
 
 ## Setup a share to upload existing Movies/Shows to Library
 1- Install samba
@@ -113,7 +113,7 @@ sudo apt install samba
 ```bash
 sudo smbpasswd -a docker
 ```
-3- Add the samba share by editting `smb.conf`:
+3- Add the samba share by editing `smb.conf`:
 ```bash
 sudo nano /etc/samba/smb.conf
 ```
