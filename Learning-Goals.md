@@ -1,6 +1,6 @@
 # DevOps:
 - [ ] Month 0 (*Essentials*)
-	- [ ] [**Git Essentials**](https://www.youtube.com/watch?v=u1Zvkqjx0Ik)
+	- [x] [**Git Essentials**](https://www.youtube.com/watch?v=u1Zvkqjx0Ik)
 	- [ ] [**Linux Crash Course**](https://www.youtube.com/playlist?list=PLT98CRl2KxKHKd_tH3ssq0HPrThx2hESW)
 	- [ ] [**Hands-on experience with Linux commands**](https://www.youtube.com/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ)
 	- [ ] **Understand Linux system file structure**
