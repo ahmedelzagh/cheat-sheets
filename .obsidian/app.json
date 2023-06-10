@@ -1,4 +1,6 @@
 {
   "showLineNumber": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "livePreview": true,
+  "readableLineLength": true
 }

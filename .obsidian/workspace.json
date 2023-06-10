@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "cc9633409cb03b98",
+        "id": "246d65a4f5b02054",
         "type": "tabs",
         "children": [
           {
-            "id": "f3ced2abc7e790da",
+            "id": "900daf81564118d5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Linux Essentials.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "fdec8cf2edb983f6",
@@ -89,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linux/Linux Essentials.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linux/Linux Essentials.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linux/Linux Essentials.md"
+              }
             }
           },
           {
@@ -155,11 +164,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f3ced2abc7e790da",
+  "active": "900daf81564118d5",
   "lastOpenFiles": [
-    "Linux/Distros/Fedora.md",
+    "-Spool Files.md",
+    "Linux/Linux Essentials.md",
+    "-.md",
+    "spool files.md",
+    "Linux/Linux Commands.md",
     "Tools/Git & Github.md",
     "Learning-Goals.md",
+    "Linux/Distros/Fedora.md",
     "Tools",
     "Books/Clean Code.md",
     "Books/Atomic Habits.md",
