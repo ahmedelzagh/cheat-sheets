@@ -1,5 +1,5 @@
 # Fedora
-
+---
 Fedora Linux is a Linux distribution developed by the Fedora Project. Fedora contains software distributed under various free and open-source licenses and aims to be on the leading edge of open-source technologies. Fedora is the upstream source for Red Hat Enterprise Linux.
 
 Since the release of Fedora 35, six different editions are made available tailored to personal computer, server, cloud computing, container and Internet of Things installations. A new version of Fedora Linux is released every six months.
@@ -9,9 +9,10 @@ Documentation: [Fedora Documentation](https://docs.fedoraproject.org/en-US/docs/
 
 ---
 ## Post Install Steps
+*(Fedora Workstation)*
 
-### 1- Enable Caching in dnf Package Manager
-Caching is Enabled to increase dnf speed
+### 1- Enable Caching in `dnf` Package Manager
+Caching is Enabled to increase `dnf` speed
 
 Edit dnf configuration:
 ```shell
@@ -43,9 +44,9 @@ Run the following command:
 sudo dnf update
 ```
 
-## 3- Enable RPM Fusion
+### 3- Enable RPM Fusion
 
-RPM Fusion **provides software that the Fedora Project or Red Hat doesn't want to ship**. That software is provided as precompiled RPMs for all current Fedora versions and current Red Hat Enterprise Linux or clones versions; you can use the RPM Fusion repositories with tools like yum and PackageKit.
+RPM Fusion **provides software that the Fedora Project or Red Hat doesn't want to ship**. That software is provided as precompiled RPMs for all current Fedora versions and current Red Hat Enterprise Linux or clones versions; you can use the RPM Fusion repositories with tools like `yum` and `PackageKit`.
 
 Installing both free and non-free RPM Fusion:
 ```shell
@@ -60,7 +61,7 @@ The following command will install the required packages:
 sudo dnf groupupdate core
 ```
 
-## 4- Adding Flatpak
+### 4- Adding Flatpak
 
 Flatpak, formerly known as xdg-app, is a utility for software deployment and package management for Linux. It is advertised as offering a sandbox environment in which users can run application software in isolation from the rest of the system.
 
@@ -71,14 +72,14 @@ The above links should work on the default GNOME and KDE Fedora installations, b
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-## 5- Change Hostname
+### 5- Change Hostname
 
 Run the following command:
 ```shell
 sudo hostnamectl set-hostname #your-name
 ```
 
-## 6- Add Multimedia Codecs
+### 6- Add Multimedia Codecs
 
 Run the following commands:
 ```shell
@@ -87,7 +88,7 @@ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=Pack
 sudo dnf groupupdate sound-and-video
 ```
 
-## 7- Make it More Customizable
+### 7- Make it More Customizable
 
 Open GNOME software installer and install the following:
 - GNOME Tweaks

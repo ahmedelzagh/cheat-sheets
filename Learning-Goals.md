@@ -9,7 +9,7 @@
 	- [ ] [**Bash Scripting on Linux**](https://www.youtube.com/playlist?list=PLT98CRl2KxKGj-VKtApD8-zCqSaN2mD4w)
 		- [ ] Create scripts needed for your daily workflow
 		- [ ] Upload scripts to the Boilerplates repo
-	- [ ] [**Ansible**](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN)
+	- [ ] [**Ansible 101**](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN) or [**Getting started with Ansible**](https://www.youtube.com/playlist?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 	- [ ] [**Networking**](https://www.youtube.com/playlist?list=PLpwHU9rNXAVurp2h2Jh-cd4-8XjkT5osu)
 		- [ ] Foundation
 		- [ ] IP, subnet, CIDR
@@ -27,7 +27,7 @@
 		- [ ] [AWS in Action](https://www.youtube.com/playlist?list=PL55RiY5tL51rudermnWTq1LlGC1BL1g3l)
 	- [ ] [**Virtual Networks**](https://www.youtube.com/watch?v=u0TgGIn2LIM)
 	- [ ] [Storage](https://www.youtube.com/watch?v=O-XBhVv2pgE)
-- [ ] Month 3 [(*CI/CD*)](https://www.youtube.com/watch?v=l_ih7lVHBII)
+- [ ] Month 3 [(**CI/CD**)](https://www.youtube.com/watch?v=l_ih7lVHBII)
 	- [ ] [**GitHub Actions**](https://www.youtube.com/watch?v=tIWDpG7sNTU&list=WL&index=63)
 	- [ ] [**Jenkins**](https://www.youtube.com/playlist?list=PL87padGs1bp9X95IxGQtFW44qWzywhbHM)
 	- [ ] [**AWS CI/CD services**](https://www.youtube.com/watch?v=h0p4dxuwv1s)
