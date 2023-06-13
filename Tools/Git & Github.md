@@ -26,9 +26,7 @@ Git is widely used in various software development workflows, including open-sou
 	```bash
 	cat .ssh/id_ed25519.pub
 	```
-3. Add the **public SSH key** to your **GitHub** account by going to `settings > SSH and GPG keys`, then pressing on `New SSH key` button and give a title to your **SSH key** and press `Add SSH key` after pasting your key:
-![new-ssh-key-form](./assets/new-ssh-key-github2.png)
-
+3. Add the **public SSH key** to your **GitHub** account by going to `settings > SSH and GPG keys`, then pressing on `New SSH key` button and give a title to your **SSH key** and press `Add SSH key` after pasting your key.
 4. Tell **Git** who we are by running the following commands:
 ```bash
 git config --global user.name "Ahmed Elzagh"
