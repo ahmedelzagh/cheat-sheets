@@ -1,7 +1,6 @@
 # Secure Shell Protocol
 
 ## Adding a new SSH key
-
 ### Creating a new **SSH key** of type `ed25519`:
 ```bash
 ssh-keygen -t ed25519 -C "your comment"
@@ -15,7 +14,7 @@ ssh-keygen -t ed25519 -C "your comment"
 	3. `ECDSA` (Elliptic Curve Digital Signature Algorithm): `ECDSA` keys use elliptic curve cryptography and offer smaller key sizes compared to `RSA` keys while providing the same level of security. They are increasingly popular due to their efficiency and security.
     
 	4. `Ed25519`: `Ed25519` keys are based on the `EdDSA` (Edwards-curve Digital Signature Algorithm) scheme. They offer strong security and good performance. Ed25519 keys have become more popular in recent years due to their simplicity and resistance to certain types of attacks.
----
+
 ### Copying the **public SSH key** to the **server**:
 1. If you are using **Linux** as the **Client**:
 ```bash
@@ -37,13 +36,13 @@ sudo chmod 600 ~/.ssh/authorized_keys
 ```
 - If you have another **SSH key/s** on the **server**, copy the contents of `id_ed25519.pub` from the **client** machine and add it as a new line in `~/.ssh/authorized_keys` on the **server**.
 ---
-### Using a specific  **SSH key** for connection:
+## Using a specific  **SSH key** for connection:
 - Specify the location and the name of the **private SSH key** you want to use by adding the `-i` option followed by it's location:
 ```bash
 ssh -i ~/.ssh/id_ed25519 aelzagh@192.168.2.39
 ```
 ---
-### Caching your passphrase on a **Linux Client**:
+## Caching your passphrase on a **Linux Client**:
 - Allows you to use a SSH key secured with a **passphrase** without entering the **passphrase** each time you connect to the **server**:
 ```bash
 eval $(ssh-agent) && ssh-add
