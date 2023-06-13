@@ -43,7 +43,7 @@ sudo apt install ansible
 
 2. Create an [**SSH key**](OpenSSH.md) and copy it to all servers you will be managing using **Ansible**.
 
-3. Create a new [**Git repository**](/Tools/Git%20&%20Github) with name `ansible-confs`, then create an **inventory** file within this directory:
+3. Create a new [**Git repository**](Git.md) with name `ansible-confs`, then create an **inventory** file within this directory:
 ```bash
 touch ~/dev/ansible-confs/inventory
 ```
