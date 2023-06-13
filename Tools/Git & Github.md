@@ -20,6 +20,23 @@ For more detailed information and usage instructions, refer to the official [Git
 ## Usage:
 Git is widely used in various software development workflows, including open-source projects, enterprise software development, and individual projects. It is supported on multiple operating systems and has a vast ecosystem of tools and services built around it, making it highly versatile and adaptable to different development environments.
 
+## Using GitHub on a New Machine:
+1. Create an [**SSH key**](./SSH)
+2. Display and copy your **public SSH key**:
+	```bash
+	cat .ssh/id_ed25519.pub
+	```
+3. Add the **public SSH key** to your **GitHub** account by going to `settings > SSH and GPG keys`, then pressing on `New SSH key` button and give a title to your **SSH key** and press `Add SSH key` after pasting your key:
+	![new-ssh-key-form](./assets/new-ssh-key-github1.png)
+	![new-ssh-key-form](./assets/new-ssh-key-github2.png)
+	![new-ssh-key-form](./assets/new-ssh-key-githu3.png)
+4. Telling **Git** who we are by running the following commands:
+```bash
+git config --global user.name "Ahmed Elzagh"
+git config --global user.email "contact@aelzagh.com"
+```
+*Note: That can be found later at `~/.gitconfig`.*
+
 ## Creating a local repository and pushing it to a remote repository:
 
 ```bash
@@ -38,6 +55,7 @@ git push -u origin main #pushing local repo to remote
 | `git init`                                            | initializes a local repo.                                                                                                                                                                                                                                                        |
 | `git add`                                             | adds a change in the working directory to the staging area.                                                                                                                                                                                                                      |
 | `git commit -m "initial commit"`                      | commit changes, `-m` is used for allowing you to specify a commit message directly on the command line.                                                                                                                                                                          |
+| `git commit -am "your commit"`                        | adds all changes and commit them at the same time. *note: Files in which changes happened must be added to the version control before*                                                                                                                                                                                                                                                                                 |
 | `git branch -m main`                                  | renaming the current branch forcefully.                                                                                                                                                                                                                                          |
 | `git remote add origing repoLink.git`                 | associate a remote repository with the name "origin" to your local repository. This allows you to push and pull changes between your local and the remote repositories.                                                                                                          |
 | `git push -u origin main`                             | pushes local repo to remote, `-u` or `--set-upstream` flag is used to set the upstream branch. It tells Git to associate the local branch with the remote branch, enabling you to use `git push` or `git pull` without specifying the remote branch and local branch every time. |
@@ -45,7 +63,7 @@ git push -u origin main #pushing local repo to remote
 | `git diff`                                            | Shows the differences between the working directory and the previous commit for all modified files.                                                                                                                                                                              |
 | `git diff --staged`                                   | Shows the differences between the staged changes and the previous commit.                                                                                                                                                                                                        |
 | `git diff file.txt`                                   | Shows the differences for a specific file.                                                                                                                                                                                                                                       |
-| `git diff directory/`                                 | Shows the differences for all files in a specific directory.                                                                                                                                                                                                                                                                                 |
+| `git diff directory/`                                 | Shows the differences for all files in a specific directory.                                                                                                                                                                                                                     |
 | `git log --oneline`                                   | display commits that have been made to the repo, `--oneline` is used to consolidate them to one line each.                                                                                                                                                                       |
 | `git revert hash`                                     | revert a particular commit and prompts you to add a message, add the hash number of the commit you want to revert.                                                                                                                                                               |
 | `git clone repo.git`                                  | clones a remote repo to local machine.                                                                                                                                                                                                                                           |
