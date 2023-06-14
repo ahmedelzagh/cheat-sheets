@@ -92,7 +92,7 @@ ansible all -m ping
 |Command|Usage|
 |---|---|
 |`ansible-playbook`|Executes Ansible playbooks to automate complex tasks on remote hosts.|
-|`ansible`|Executes ad-hoc commands or tasks on remote hosts defined in the inventory.|
+|`ansible`|Executes **ad-hoc** commands or tasks on remote hosts defined in the inventory.|
 |`ansible-galaxy`|Manages roles, collections, and other external content for Ansible.|
 |`ansible-vault`|Encrypts and decrypts sensitive data files used in Ansible playbooks.|
 |`ansible-doc`|Displays documentation for Ansible modules.|
@@ -116,7 +116,9 @@ ansible all -m ping
 ---
 ## Most Used Ansible Commands
 
-| Command                    | Usage                           |
-| -------------------------- | ------------------------------- |
-| `ansible all --list-hosts` | Shows you a list of your hosts. |
-| `ansible all -m gather_facts`                           |                                 |
+| Command                                                    | Usage                                                                                                                                                                   |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ansible all --list-hosts`                                 | Shows you a list of your hosts.                                                                                                                                         |
+| `ansible all -m gather_facts`                              | Pulls all information about all of your remote hosts, you can add `--limit` option followed by an IP address to pull only the information of this specific remote host. |
+| `ansible all -m gather_facts --limit 192.168.2.9`          | Limits the module to only one or more machines from the inventory.                                                                                                                                                                        |
+| `ansible all -m gather_facts \| grep ansbile_distributiob` | Used to grep a specific info about the machine.                                                                                                                         |
