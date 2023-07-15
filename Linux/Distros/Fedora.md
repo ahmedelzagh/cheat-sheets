@@ -14,7 +14,7 @@ Documentation: [Fedora Documentation](https://docs.fedoraproject.org/en-US/docs/
 ### 1- Enable Caching in `dnf` Package Manager
 Caching is Enabled to increase `dnf` speed
 
-Edit dnf configuration:
+Edit `dnf` configuration:
 ```shell
 sudo nano /etc/dnf/dnf.conf
 ```

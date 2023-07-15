@@ -116,9 +116,34 @@ ansible all -m ping
 ---
 ## Most Used Ansible Commands
 
-| Command                                                    | Usage                                                                                                                                                                   |
-| ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ansible all --list-hosts`                                 | Shows you a list of your hosts.                                                                                                                                         |
-| `ansible all -m gather_facts`                              | Pulls all information about all of your remote hosts, you can add `--limit` option followed by an IP address to pull only the information of this specific remote host. |
-| `ansible all -m gather_facts --limit 192.168.2.9`          | Limits the module to only one or more machines from the inventory.                                                                                                                                                                        |
-| `ansible all -m gather_facts \| grep ansbile_distributiob` | Used to grep a specific info about the machine.                                                                                                                         |
+- Shows you a list of your hosts.
+```shell
+ansible all --list-hosts
+```
+
+- Pulls all information about all of your remote hosts, you can add `--limit` option followed by an IP address to pull only the information of this specific remote host:
+``` shell
+ansible all -m gather_facts
+```
+
+- Limits the module to only one or more machines from the inventory:
+```shell
+ansible all -m gather_facts --limit 192.168.2.9
+```
+
+- Used to grep a specific info about the machine:
+```shell
+ansible all -m gather_facts | grep ansbile_distributiob
+```
+
+- To list all tags in a specific playbook:
+```shell
+ansible-playbook --list-tags playbook.yml
+```
+
+- To run only plays with a specific tag:
+```shell
+ansible-playbook --tags $tag -K playbook.yml
+```
+*notes: `-K` option is short for `--ask-become-pass`, to use more than one tag you must use double quotes `""` and comma `,` ex: `--tags "apache,db"` *
+
